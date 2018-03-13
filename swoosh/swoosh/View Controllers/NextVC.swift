@@ -12,10 +12,12 @@ class NextVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
+    @IBAction func nextButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "LastVCIdentifier", sender: nil)
+    }
+    
     
     
 
