@@ -273,6 +273,9 @@
                                         <state key="normal" title="BEGINER">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="beginerButtonTapped:" destination="C4B-48-B8F" eventType="touchUpInside" id="VVa-dH-Gzt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4I-Rk-Svv" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
                                         <rect key="frame" x="184" y="0.0" width="151" height="40"/>
@@ -284,6 +287,9 @@
                                         <state key="normal" title="BALLER">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ballerButtonTapped:" destination="C4B-48-B8F" eventType="touchUpInside" id="Qh9-IF-lme"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -298,6 +304,9 @@
                                 <state key="normal" title="FINISH">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="finishButtonTapped:" destination="C4B-48-B8F" eventType="touchUpInside" id="MaH-6x-FRz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -318,6 +327,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zk0-6U-vUQ"/>
                     </view>
+                    <connections>
+                        <outlet property="finishButton" destination="Wm2-PA-8Sw" id="F4L-fh-Jup"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uGj-uV-Mvh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

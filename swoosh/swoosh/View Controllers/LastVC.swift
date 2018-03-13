@@ -12,11 +12,32 @@ class LastVC: UIViewController {
 
     var player : Player?
     
+    @IBOutlet weak var finishButton: BorderButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(player?.desiredLeague)
+        finishButton.isEnabled = false
     }
+    
 
+    @IBAction func beginerButtonTapped(_ sender: UIButton) {
+        selectedLevel(typeLevel: "beginer")
+    }
+    
+    @IBAction func ballerButtonTapped(_ sender: UIButton) {
+        selectedLevel(typeLevel: "baller")
+    }
+    
+    @IBAction func finishButtonTapped(_ sender : UIButton){
+        print("this is user : \(player?.desiredLeague) and level \(player?.selectedSkillLeveled)")
+    }
+    
+    func selectedLevel(typeLevel : String){
+        player?.selectedSkillLeveled = typeLevel
+        finishButton.isEnabled = true
+        
+    }
+    
     
 }
