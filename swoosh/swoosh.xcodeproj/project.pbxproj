@@ -14,6 +14,7 @@
 		D71ECAB120565E3C0022BD28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71ECAAF20565E3C0022BD28 /* LaunchScreen.storyboard */; };
 		D7984E2520576D1F000B2937 /* NextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7984E2420576D1F000B2937 /* NextVC.swift */; };
 		D7984E2720576D2A000B2937 /* LastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7984E2620576D2A000B2937 /* LastVC.swift */; };
+		D7984E2920577FBD000B2937 /* Plsyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7984E2820577FBD000B2937 /* Plsyer.swift */; };
 		D7AE3DCF205661FB00641CEE /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AE3DCE205661FB00641CEE /* BorderButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		D71ECAB220565E3C0022BD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7984E2420576D1F000B2937 /* NextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextVC.swift; sourceTree = "<group>"; };
 		D7984E2620576D2A000B2937 /* LastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastVC.swift; sourceTree = "<group>"; };
+		D7984E2820577FBD000B2937 /* Plsyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plsyer.swift; sourceTree = "<group>"; };
 		D7AE3DCE205661FB00641CEE /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		D7984E2220576C80000B2937 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D7984E2820577FBD000B2937 /* Plsyer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				D7984E2720576D2A000B2937 /* LastVC.swift in Sources */,
 				D71ECAA920565E3C0022BD28 /* StartVC.swift in Sources */,
+				D7984E2920577FBD000B2937 /* Plsyer.swift in Sources */,
 				D71ECAA720565E3C0022BD28 /* AppDelegate.swift in Sources */,
 				D7AE3DCF205661FB00641CEE /* BorderButton.swift in Sources */,
 				D7984E2520576D1F000B2937 /* NextVC.swift in Sources */,
