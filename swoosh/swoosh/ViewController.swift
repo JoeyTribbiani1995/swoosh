@@ -23,8 +23,7 @@ class ViewController: UIViewController {
 //        beginScreenBG.frame = view.frame
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    @IBAction func unwindToStart(_ seque : UIStoryboardSegue){
         
     }
 

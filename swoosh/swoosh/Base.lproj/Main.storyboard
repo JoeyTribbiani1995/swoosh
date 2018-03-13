@@ -61,6 +61,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Fqk-MV-cYi" kind="show" id="qRl-fl-thw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -174,14 +177,27 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHh-Qv-3uv">
+                                <rect key="frame" x="20" y="10" width="29" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="29" id="QIr-bR-i3Q"/>
+                                    <constraint firstAttribute="height" constant="24" id="Wca-FI-6Je"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="0Yh-Dq-3nT" kind="unwind" unwindAction="unwindToStart:" id="zuU-eq-mI8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YaM-qa-ues" firstAttribute="leading" secondItem="kSh-O0-YrS" secondAttribute="leading" constant="25" id="20w-V1-oml"/>
                             <constraint firstItem="Dmy-dR-W0w" firstAttribute="top" secondItem="N8s-pf-wId" secondAttribute="bottom" constant="50" id="5Ls-LO-zsi"/>
+                            <constraint firstItem="lHh-Qv-3uv" firstAttribute="top" secondItem="Y40-D2-NS9" secondAttribute="top" constant="10" id="93R-b2-rZa"/>
                             <constraint firstItem="OOH-Xa-nVY" firstAttribute="leading" secondItem="kSh-O0-YrS" secondAttribute="leading" id="9K0-mz-Nql"/>
                             <constraint firstItem="N8s-pf-wId" firstAttribute="leading" secondItem="kSh-O0-YrS" secondAttribute="leading" id="9X1-s9-8hq"/>
                             <constraint firstItem="kSh-O0-YrS" firstAttribute="trailing" secondItem="YaM-qa-ues" secondAttribute="trailing" constant="25" id="AKc-dp-RdX"/>
+                            <constraint firstItem="lHh-Qv-3uv" firstAttribute="leading" secondItem="kSh-O0-YrS" secondAttribute="leading" constant="20" id="YOK-S6-mAO"/>
                             <constraint firstItem="OOH-Xa-nVY" firstAttribute="bottom" secondItem="kSh-O0-YrS" secondAttribute="bottom" id="YaP-1h-cYV"/>
                             <constraint firstItem="kSh-O0-YrS" firstAttribute="bottom" secondItem="YaM-qa-ues" secondAttribute="bottom" constant="40" id="ZK3-nq-wsv"/>
                             <constraint firstItem="Dmy-dR-W0w" firstAttribute="leading" secondItem="kSh-O0-YrS" secondAttribute="leading" constant="20" id="a8u-nd-Cna"/>
@@ -195,6 +211,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upV-IK-ChQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0Yh-Dq-3nT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="876" y="133.5832083958021"/>
         </scene>
@@ -237,7 +254,7 @@
                                             <constraint firstAttribute="height" constant="40" id="hlg-Ga-1rz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                        <state key="normal" title="Mens">
+                                        <state key="normal" title="BEGINER">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
@@ -248,7 +265,7 @@
                                             <constraint firstAttribute="height" constant="40" id="aAX-uQ-ocC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                        <state key="normal" title="Womens">
+                                        <state key="normal" title="BALLER">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
@@ -262,7 +279,7 @@
                                     <constraint firstAttribute="height" constant="40" id="fEg-sC-EZk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                <state key="normal" title="NEXT">
+                                <state key="normal" title="FINISH">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
@@ -292,6 +309,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
