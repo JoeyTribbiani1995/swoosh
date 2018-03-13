@@ -19,6 +19,7 @@ class NextVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        player = Player(desiredLeague: "", selectedSkillLeveled: "")
         nextButton.isEnabled = false
     }
 
@@ -44,6 +45,17 @@ class NextVC: UIViewController {
         
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "LastVCIdentifier" else {
+            return
+        }
+        
+        let lastVC = segue.destination as! LastVC
+        lastVC.player = player
+        
+        
+    }
     
 
     
